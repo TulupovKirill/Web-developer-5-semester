@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB_2</title>
+    <style>
+        .center {
+            margin-left: 40%;
+            width: 20%;
+        }
+        
+        .anketa {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="anketa">Анкета</h2>
+    <div class="center">
+        <form>
+            <fieldset>
+                <p>
+                    <label for="login">Логин: </label>
+                    <input type="text" required placeholder="Введите ваш никнейм" id="login" name="login" />
+                </p>
+
+                <p>
+                    <label for="password">Пароль: </label>
+                    <input type="password" autofocus required id="password" name="password" />
+                </p>
+
+                <p>
+                    <label for="birthdata">Дата рождения: </label>
+                    <input type="date" required name="birthdata"/>
+                </p>
+
+                <p>
+                    <label for="weight">Ваш вес </label>
+                    <input type="number" min="0" name="weight"/>
+                </p>
+
+                <p>
+                    <label for="fruits">Выберите фрукт:</label>
+                    <input list="fruit_options" id="fruits" name="fruit_name">
+                    <datalist id="fruit_options">
+                        <option value="Яблоко">
+                        <option value="Банан">
+                        <option value="Апельсин">
+                    </datalist>
+                </p>
+
+                <p>
+                    <label for="disable_input">Не тыкать!</label>
+                    <input type="text" disabled name="disable_input"/>
+                </p>
+
+                <p>
+                    <label for="readonly_input">Тут только читать</label>
+                    <input type="text" readonly name="readonly_input"/>
+                </p>
+
+                <p>
+                    <button type="submit">Отправить</button>
+                </p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
