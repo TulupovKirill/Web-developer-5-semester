@@ -25,7 +25,7 @@
 .list
 {
     font-size: 20px;
-    color: текста #444;
+    color: #444;
     font-style: italic;
     list-style-type: square;
 }
